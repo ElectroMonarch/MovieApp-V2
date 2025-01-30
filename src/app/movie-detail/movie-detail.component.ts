@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Movie } from '../movie';
 
 @Component({
@@ -8,7 +8,7 @@ import { Movie } from '../movie';
 })
 export class MovieDetailComponent implements OnInit {
 
-  @Input() movie: Movie
+  @Input() movie:Movie
 
   constructor() { }
 

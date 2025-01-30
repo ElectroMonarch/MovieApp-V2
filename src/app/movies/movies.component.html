@@ -5,10 +5,14 @@
         {{ title }}
     </div>
     <ul class="list-group list-group-flush">
-        <li *ngFor="let movie of movies" (click)="onSelect(movie)" class="list-group-item"
-            [class.active]="movie===selectedMovie">
+        <li *ngFor="let movie of movies" (click)="onSelect(movie)" 
+        class="list-group-item"
+        [class.active]="movie===selectedMovie">
             <span class="badge badge-primary">{{movie.id}}</span> {{movie.name}}
             <span class="close">x</span>
         </li>
     </ul>
 </div>
+
+
+
